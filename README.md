@@ -32,8 +32,10 @@ Install the Python packages from a virtual environment:
 py -m venv venv
 .\venv\Scripts\Activate.ps1
 python -m pip install --upgrade pip
-python -m pip install joblib lightgbm numpy pandas xgboost yfinance
+python -m pip install joblib lightgbm matplotlib numpy pandas xgboost yfinance
 ```
+
+`matplotlib` is included in `requirements.txt` for the embedded post-prediction chart. If it is not installed, the rest of the application still runs and the chart area displays an installation notice.
 
 If PowerShell blocks activation, run the application with the virtual-environment interpreter directly:
 
@@ -49,7 +51,7 @@ From the project directory:
 py app.py
 ```
 
-Select a company and click **Load Model & Predict**. The first run for a company can take longer because the application downloads ten years of data and trains both models. Later runs reuse the cached model and download six months of recent data.
+Select a company and click **Load Model & Predict**. The first run for a company can take longer because the application downloads ten years of data and trains both models. Later runs reuse the cached model and download six months of recent data. Results include a visual chart with the recent closing-price trend, 20-day average, and predicted next-day price marker.
 
 ## Project structure
 

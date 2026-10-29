@@ -1,0 +1,7 @@
+joblib
+lightgbm
+matplotlib
+numpy
+pandas
+xgboost
+yfinance
