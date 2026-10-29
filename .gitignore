@@ -1,0 +1,35 @@
+# =====================================
+# Python / Environment
+# =====================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.venv/
+venv/
+ENV/
+env/
+
+# =====================================
+# IDEs & Editors
+# =====================================
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# =====================================
+# Project Specific (ML & Data)
+# =====================================
+# Ignore trained model binaries (too large for GitHub)
+models/*.pkl
+models/
+
+# Ignore downloaded stock dataset CSV files
+*.csv
+
+# =====================================
+# OS Files
+# =====================================
+.DS_Store
+Thumbs.db
