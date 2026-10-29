@@ -58,6 +58,7 @@ Select a company and click **Load Model & Predict**. The first run for a company
 ```text
 .
 ├── app.py              # Tkinter UI, data processing, training, and prediction
+├── explanation.ipynb   # Explainable, graph-rich notebook walkthrough
 ├── models/             # Local cached model files; ignored by Git
 ├── requirements.txt    # Dependency specification file
 ├── AGENTS.md           # Guidance for contributors and coding agents
